@@ -1,5 +1,5 @@
 import './App.css';
-import MemoPage from './memo・MemoPage';
+import MemoPage from './memo/MemoPage';
 
 function App() {
   return (
