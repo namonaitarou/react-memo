@@ -10,15 +10,15 @@ function MemoPage(){
 
     return (
         <div>
-            <h5 className='my-3'>mode:{mode}</h5>
-            <div className='alert alert-primary pb-0'>
+            <h5 className="my-3">mode: {mode}</h5>
+            <div className="alert alert-primary pb-0">
                 <AddForm />
                 <FindForm />
                 <DelForm />
             </div>
-            <dev>
+            <div>
                 <Memo />
-            </dev>
+            </div>
         </div>
     )
 }

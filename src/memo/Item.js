@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Item(props){
     const th = {
@@ -10,11 +10,12 @@ function Item(props){
     }
     let d = new Date(Date.parse(props.value.created));
     let f = d.getMonth() +
-            ':' + 
-            d.getMinutes() +
+            '/' + 
+            d.getDate() +
             ' ' +
             d.getHours() +
-            d.getMitutes();
+            '' +
+            d.getMinutes();
     
     return (
         <tr><th style={th}>No, {props.index}</th>

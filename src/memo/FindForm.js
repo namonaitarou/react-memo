@@ -8,7 +8,7 @@ function FindForm(props){
     const [mode, setMode] = useState('mode', 'find')
 
     const doChange =(e) => {
-        setMessage(e.taeget.value)
+        setMessage(e.target.value)
     }
 
     const doAction = (e) => {
