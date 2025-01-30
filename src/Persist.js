@@ -7,8 +7,17 @@ function usePersist(ky, initVal){
             const item = window.localStorage.getItem(key)
             return item ? JSON.parse(item) : initVal
         } catch(err){
-            consoke.log(err)
-            return initVal
+            console.log(err)
+            return initVal;
+        }
+    }
+
+    const setValue = (val) => {
+        try {
+            setSavedValue(val)
+            window.localStorage.setItem(key, JSON.stringify(val))
+        }catch(err){
+            console.log(err)
         }
     }
     const [savedValue, setSavedValue] = useState(value)

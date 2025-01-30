@@ -1,12 +1,12 @@
-import  usePersist from '../usePersist';
+import usePersist from '../Persist'
 import Memo from './Memo';
 import AddForm from './AddForm';
-import findForm from './FindForm';
+import FindForm from './FindForm';
 import DelForm from './DelForm';
 
 
 function MemoPage(){
-    const [mode, setMode] =usePersist('mode', 'default');
+    const [mode, setMode] = usePersist('mode', 'default');
 
     return (
         <div>

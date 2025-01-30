@@ -3,7 +3,7 @@ import usePersist from '../Persist'
 
 function FindForm(props){
     const [memo, setMemo] = usePersist("memo", [])
-    cosnt [fmemo, setFMemo] = usePersist("findMemo", [])
+    const [fmemo, setFMemo] = usePersist("findMemo", [])
     const [message, setMessage] = useState('')
     const [mode, setMode] = useState('mode', 'find')
 
