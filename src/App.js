@@ -1,6 +1,6 @@
 import './App.css';
 import MemoPage from './memo?MemoPage';
-
+import '@testing-library/jest-dom';
 
 function App() {
   return (
